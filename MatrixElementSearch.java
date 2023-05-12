@@ -16,20 +16,15 @@ public class Main
 		      arr[i][j]=sc.nextInt();
 		  }
 		}
-		int result = 0, i;
-		for(i=0; i<n; i++) {
+		for(int i=0; i<n; i++) {
 		    for(int j=0; j<m; j++) {
 		        if(arr[i][j]==x) {
-		        result = 1;
 		        System.out.println("Row = "+(i+1));
 		        System.out.println("Column = "+(j+1));
-		        break;
+		        return;
 		        }
 		    }
-		    if(result!=0)
-		        break;
 		}
-		if(i==n)
 		System.out.print(-1);
 	}
 }
